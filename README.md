@@ -1,5 +1,4 @@
-[Project Idea__Smart Lab Assistant Automated Troubleshooting”.pdf](https://github.com/user-attachments/files/22603338/Project.Idea__Smart.Lab.Assistant.Automated.Troubleshooting.pdf)
-
+[Project Idea__Smart Lab Assistant Automated Troubleshooting”.https://docs.google.com/document/d/1UyL8h9Wxpag31cD8uAO0pZXuBhKJyJUrmwdnRLQYmoQ/edit?tab=t.0
 
 Malak Yafai timelog sheet https://docs.google.com/spreadsheets/d/1BLMQB8IFtLszzfi1amwY0-519NyE_XOqdYUjenBddOg/edit?pli=1&gid=0#gid=0
 
