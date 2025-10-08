@@ -7,3 +7,47 @@
     flex-direction: column; 
     overflow: hidden; 
 }
+
+#chat-messages {
+    flex-grow: 1; 
+    padding: 15px; 
+    overflow-y: auto; 
+    background-color: #FFD700;
+}
+
+.user-message{
+  background-color: rgb(240, 149, 104);
+  color: white; 
+  align-self: flex-end; 
+  margin-left: auto; 
+}
+
+.bot-message {
+  background-color: #e2e2e2;
+  color: #333; 
+  align-self: flex-start; 
+  margin-right: auto; 
+}
+
+#input-area {
+    display: flex; 
+    padding: 15px; 
+    border-top: 2px solid #ccc;
+}
+
+#user-input {
+    flex-grow: 1; 
+    padding: 8px; 
+    border: 2px solid #ccc; 
+    border-radius: 4px; 
+    margin-right: 8px;
+} 
+
+#sendbutton {
+    padding: 8px 15px; 
+    background-color: #28a745; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
