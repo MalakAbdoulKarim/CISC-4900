@@ -8,10 +8,9 @@
 - Investigate AI/NLP chatbot libraries
 
  **To Do(This Week)**
-- Draft first version of system diagram(docs)  
-- Write initial troubleshooting logic(backend)  
-- Set up basic project repository structure on GitHub  
-- Draft time log for Week 9/29-10/6
+- fix vsiual studio and find flask paython installer 
+-Find JSON installer
+
 
 **In Progress**
 - Build chatbot decision tree for login issues    
