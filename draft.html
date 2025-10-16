@@ -4,16 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB COMPUTER LAB CHATBOT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
+    <link rel="stylesheet" href="draft.css">
 </head>
 <body>
-    <div id = "CHATBOT-container">
-        <div id="chat-messages">
-    </div>
-    <div id="input area"> 
-        <input type="text" id="user-input" placeholder="Type your message..."> 
-        <button id="send-button">Send</button>
+    <div class = "CHATBOT-popup">
+       <div class="chat-header">
+         <div class="header-info"></div>
        </div>
+
+    <div class = "chat-body">
+        <div class="chat-messages">
+        <div class = "message-content"></div>
     </div>
-    <script src="script.js"></script>
+
+    <div class = "class-footer">
+     <form action="#" class="chat-form">
+        <textarea placeholder = "Type a Message..." class="message-input"></textarea>
+        <div class = "chat-controls">
+            <button type ="button" 
+            class = "material-symbols-rounded">sentiment_satisfied</button>
+            <button type ="button"
+            class = "material-symbols-rounded">attach_file</button>
+            <button type ="submit"
+            class = "material-symbols-rounded">arrow_upward</button>
+        </div>
+      </form>
+     </div>
+    </div>
 </body> 
 </html>
