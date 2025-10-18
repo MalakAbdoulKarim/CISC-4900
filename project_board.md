@@ -4,7 +4,7 @@
 
  **Backlog**
 - Research integration with lab monitoring tools
-- Explore mobile friendly interface  
+- Explore Web based friendly interface  
 - Investigate AI/NLP chatbot libraries
 
  **To Do(This Week)**
