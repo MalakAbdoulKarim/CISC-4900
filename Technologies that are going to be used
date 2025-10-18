@@ -1,0 +1,13 @@
+1-Frontend (User Interface):
+HTML5: for structuring web pages.
+CSS:for styling( can use frameworks like Bootstrap or Tailwind CSS to make it look modern).
+JavaScript(Vanilla JS):for interactivity(buttons,forms,live updates).
+
+2-Backend(Logic&Data Handling):
+Node.js with Express.js:a popular backend choice for web apps,it handles requests,APIs,and routes easily.
+Python with Flask:another simple backend option,especially if we want to integrate AI features(like chatbot).
+
+3-Data Storage(since we’re not using SQL):
+MongoDB:NoSQL database that works great with Node.js.
+Firebase Firestore:a cloud based option that doesn’t require us to set up our own server.
+JSON files:if the data is small (for prototypes),we can store lab data,user info,or logs in structured JSON format.
