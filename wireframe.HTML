@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard Wireframe</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+        }
+        /* Styling for wireframe elements (grayscale, solid borders) */
+        .wireframe-box {
+            border: 1px solid #a0a0a0;
+            background-color: #e0e0e0;
+            color: #333;
+            text-align: center;
+            border-radius: 4px;
+        }
+        .wireframe-header {
+            background-color: #cccccc;
+            font-weight: 600;
+        }
+        .wireframe-text {
+            color: #666;
+            font-style: italic;
+            font-size: 0.875rem; /* text-sm */
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-7xl mx-auto space-y-8">
+
+        <!-- Header: Logo/Title and User Section -->
+        <header class="flex justify-between items-center p-4 wireframe-box bg-white">
+            <div class="h-8 w-40 wireframe-box wireframe-header flex items-center justify-center bg-gray-300">
+                [LAB ASSISTANT TITLE/LOGO]
+            </div>
+            <div class="flex space-x-4">
+                <div class="h-8 w-20 wireframe-box flex items-center justify-center">
+                    Admin Name
+                </div>
+                <div class="h-8 w-16 wireframe-box bg-gray-400 flex items-center justify-center">
+                    Logout
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="flex flex-col lg:flex-row gap-8">
+
+            <!-- Sidebar/Navigation (The Flow) -->
+            <aside class="lg:w-1/5 space-y-2">
+                <div class="p-3 wireframe-box wireframe-header">NAV MENU</div>
+                <div class="p-3 h-10 wireframe-box flex items-center justify-center bg-gray-300">
+                    Asset Management (Active)
+                </div>
+                <div class="p-3 h-10 wireframe-box flex items-center justify-center">
+                    Incident Tracking
+                </div>
+                <div class="p-3 h-10 wireframe-box flex items-center justify-center">
+                    User Management
+                </div>
+                <div class="p-3 h-10 wireframe-box flex items-center justify-center">
+                    Analytics / Reports
+                </div>
+                <p class="wireframe-text pt-4">Defines core application views.</p>
+            </aside>
+
+            <!-- Dashboard Content (The Endpoints) -->
+            <section class="lg:w-4/5 space-y-6">
+                
+                <!-- Section Title and CTA -->
+                <div class="flex justify-between items-center p-4 wireframe-box wireframe-header">
+                    <h2>Asset Management Overview</h2>
+                    <div class="h-10 w-32 wireframe-box bg-gray-400 flex items-center justify-center">
+                        + Add New Asset
+                    </div>
+                </div>
+
+                <!-- Filters and Search -->
+                <div class="flex flex-col md:flex-row gap-4">
+                    <div class="flex-grow h-10 wireframe-box flex items-center justify-start p-2">
+                        <span class="wireframe-text mr-2">Search:</span> [Input Field]
+                    </div>
+                    <div class="w-full md:w-1/4 h-10 wireframe-box flex items-center justify-center">
+                        Filter by Location [Dropdown]
+                    </div>
+                    <div class="w-full md:w-1/4 h-10 wireframe-box flex items-center justify-center">
+                        Filter by Status [Dropdown]
+                    </div>
+                </div>
+                <p class="wireframe-text">Filtering requires `GET /api/assets?location=...&status=...` endpoint logic.</p>
+
+
+                <!-- Data Table (Core Asset List) -->
+                <div class="overflow-x-auto">
+                    <table class="min-w-full wireframe-box bg-white">
+                        <thead>
+                            <tr class="wireframe-header bg-gray-300">
+                                <th class="p-3">Asset ID</th>
+                                <th class="p-3">Location</th>
+                                <th class="p-3">Status</th>
+                                <th class="p-3">Last Updated</th>
+                                <th class="p-3">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Row 1: Healthy Asset -->
+                            <tr class="border-t border-gray-400">
+                                <td class="p-3 h-12 wireframe-box wireframe-text bg-green-200">PC-101</td>
+                                <td class="p-3 wireframe-text">Lab A</td>
+                                <td class="p-3 wireframe-text">AVAILABLE</td>
+                                <td class="p-3 wireframe-text">2 hours ago</td>
+                                <td class="p-3">
+                                    <div class="h-6 w-16 mx-auto wireframe-box bg-gray-400">View/Edit</div>
+                                </td>
+                            </tr>
+                            <!-- Row 2: Reported Issue -->
+                            <tr class="border-t border-gray-400">
+                                <td class="p-3 h-12 wireframe-box wireframe-text bg-red-200">PRT-005</td>
+                                <td class="p-3 wireframe-text">Library</td>
+                                <td class="p-3 wireframe-text">ISSUE (T-123)</td>
+                                <td class="p-3 wireframe-text">5 mins ago</td>
+                                <td class="p-3">
+                                    <div class="h-6 w-16 mx-auto wireframe-box bg-gray-400">View/Edit</div>
+                                </td>
+                            </tr>
+                            <!-- Placeholder Rows -->
+                            <tr class="border-t border-gray-400">
+                                <td class="p-3 h-12 wireframe-text">LPT-020</td>
+                                <td class="p-3 wireframe-text">Lab B</td>
+                                <td class="p-3 wireframe-text">MAINTENANCE</td>
+                                <td class="p-3 wireframe-text">Yesterday</td>
+                                <td class="p-3">
+                                    <div class="h-6 w-16 mx-auto wireframe-box bg-gray-400">View/Edit</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="wireframe-text pt-4">Clicking 'View/Edit' requires `GET /api/assets/{id}` and `PUT /api/assets/{id}` (Update) logic.</p>
+
+            </section>
+        </main>
+        
+        <!-- Footer (Placeholder) -->
+        <footer class="p-4 wireframe-box wireframe-text bg-white">
+            [Footer: Version 1.0]
+        </footer>
+
+    </div>
+</body>
+</html>
