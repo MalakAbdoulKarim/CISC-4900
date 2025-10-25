@@ -5,7 +5,7 @@
 print("Welcome to Smart Lab Assistant")
 print("What issue are you facing?")
 print("1. Login Issue")
-print("2. Printer Problem")
+print("2. MFA questions")
 print("3. Software Crash")
 
 # This block captures the user's choice from the menu.
@@ -29,10 +29,12 @@ if choice == "1":
 # Executes if the input 'choice' is exactly "2".
 # Output: Prints three specific troubleshooting steps for printer issues.
 elif choice == "2":
-    print("Troubleshooting Printer:")
-    print("- Check if the printer is online")
-    print("- Clear the print queue")
-    print("- Try a different lab printer")
+    print("Troubleshooting MFA:")
+    print("- Ensure your primary login credentials are correct")
+    print("- Check if your registered device or authenticator app is accessible")
+    print("- Verify that the MFA code has not expired")
+    print("- If issues persist, reset your MFA or contact IT support")
+
 
 # Conditional block for "3. Software Crash".
 # Executes if the input 'choice' is exactly "3".
