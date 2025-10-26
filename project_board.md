@@ -8,8 +8,8 @@
 - Investigate AI/NLP chatbot libraries
 
  **To Do(This Week)**
-- fix vsiual studio and find flask paython installer 
--Find JSON installer
+- Full Draft slides
+_Ai chatbot programming 
 
 
 **In Progress**
