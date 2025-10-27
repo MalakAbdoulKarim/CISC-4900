@@ -30,11 +30,57 @@ body{
     align-items: center; 
     background: #8B0000;
     justify-content: space-between;
-    padding: 13px 20px; 
+    padding: 15px 22px; 
 }
 
 .chat-header .header-info {
-    color: #fff;
+    display: flex; 
+    gap: 10px; 
+    align-items: center;
+}
+
+/* Logo TBD */
+.header-info .chatbot-logo {
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    background: #fff; 
+    border-radius: 50%;  
+}
+
+/* Logo text TBD */
+.header-info .logo-text {
     font-size: 18px; 
     font-weight: 600; 
+    color: #fff; 
+}
+
+.chat-header #close-chatbot {
+    font-size: 28px; 
+    color: #fff; 
+    height: 40px; 
+    width: 40px;
+    border-radius: 50%;
+    font-size: 1.9rem; 
+    margin-right: -10px;
+    padding-top: 2px;
+    cursor: pointer; 
+    background: none; 
+    border: none; 
+    transition: 0.2 ease;
+}
+ 
+.chat-header #close-chatbot:hover {
+    background: darkgoldenrod; 
+
+}
+
+.chat-body {
+    padding: 25px 22px;
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px;
+    overflow-y: auto;
+    height: 460px; 
+    margin-bottom: 80px; 
 }
