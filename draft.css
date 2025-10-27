@@ -1,53 +1,40 @@
-#chatbot-container {
-    width: 400px;
-    height: 500px; 
-    border: 2px solid #7a1717; 
-    margin: 20px auto; 
-    display: flex; 
-    flex-direction: column; 
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:wght@300..800&display=swap');
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Inter", sans-serif; 
+}
+
+body{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    min-height: 100vh; 
+    background: linear-gradient(#EEEEFF, #F87C63);
+
+}
+
+.chatbot-popup {
+    width: 420px;
+    background: #fff;
     overflow: hidden; 
+    border-radius: 15px; 
+    box-shadow: 0 0 128px 0 rgba(0,0,0,0,0.1), 0 32px 64px -48px rgba(0,0,0,0,0.5);
 }
 
-#chat-messages {
-    flex-grow: 1; 
-    padding: 15px; 
-    overflow-y: auto; 
-    background-color: #FFD700;
+.chat-header {
+    display: flex;
+    align-items: center; 
+    background: #8B0000;
+    justify-content: space-between;
+    padding: 13px 20px; 
 }
 
-.user-message{
-  background-color: rgb(240, 149, 104);
-  color: white; 
-  align-self: flex-end; 
-  margin-left: auto; 
-}
-
-.bot-message {
-  background-color: #e2e2e2;
-  color: #333; 
-  align-self: flex-start; 
-  margin-right: auto; 
-}
-
-#input-area {
-    display: flex; 
-    padding: 15px; 
-    border-top: 2px solid #ccc;
-}
-
-#user-input {
-    flex-grow: 1; 
-    padding: 8px; 
-    border: 2px solid #ccc; 
-    border-radius: 4px; 
-    margin-right: 8px;
-} 
-
-#sendbutton {
-    padding: 8px 15px; 
-    background-color: #28a745; 
-    color: white; 
-    border: none; 
-    border-radius: 4px; 
-    cursor: pointer; 
+.chat-header .header-info {
+    color: #fff;
+    font-size: 18px; 
+    font-weight: 600; 
 }
