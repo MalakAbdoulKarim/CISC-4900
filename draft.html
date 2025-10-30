@@ -8,29 +8,36 @@
     <link rel="stylesheet" href="draft.css">
 </head>
 <body>
-    <div class = "CHATBOT-popup">
-       <div class="chat-header">
-         <div class="header-info"></div>
-       </div>
-
-    <div class = "chat-body">
-        <div class="chat-messages">
-        <div class = "message-content"></div>
-    </div>
-
-    <div class = "class-footer">
-     <form action="#" class="chat-form">
-        <textarea placeholder = "Type a Message..." class="message-input"></textarea>
-        <div class = "chat-controls">
-            <button type ="button" 
-            class = "material-symbols-rounded">sentiment_satisfied</button>
-            <button type ="button"
-            class = "material-symbols-rounded">attach_file</button>
-            <button type ="submit"
-            class = "material-symbols-rounded">arrow_upward</button>
+    <div class="chatbot-popup">
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="header-info">
+                <div class="logo-text">Chat Assistant</div>
+            </div>
+            <button id="close-chatbot" class="material-symbols-rounded">keyboard_arrow_down</button>
         </div>
-      </form>
-     </div>
+        
+        <!-- Body -->
+        <div class="chat-body">
+            <div class="message bot-message">
+                <div class="message-text">Hey there! How can I help you today?</div>
+            </div>
+            <div class="message user-message">
+                <div class="message-text">Lorem ipsum dolor sit am consec tetur adipisicing</div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="chat-footer">
+            <form action="#" class="chat-form">
+                <textarea placeholder="Type a Message..." class="message-input"></textarea>
+                <div class="chat-controls">
+                    <button type="button" class="material-symbols-rounded">sentiment_satisfied</button>
+                    <button type="button" class="material-symbols-rounded">attach_file</button>
+                    <button type="submit" class="material-symbols-rounded">arrow_upward</button>
+                </div>
+            </form>
+        </div>
     </div>
-</body> 
+</body>
 </html>
