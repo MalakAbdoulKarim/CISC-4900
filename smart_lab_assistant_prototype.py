@@ -7,7 +7,7 @@ print("What issue are you facing?")
 print("1. Login Issue")
 print("2. MFA questions")
 print("3. Email (BC Email / Outlook) login & password reset")
-Print("4.Wi-Fi access issues")
+print("4.Wi-Fi access issues")
 
 
 # This block captures the user's choice from the menu.
