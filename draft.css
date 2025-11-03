@@ -171,20 +171,32 @@ body {
     background: #a52a2a;
 }
 
-/* Scrollbar styling */
-.chat-body::-webkit-scrollbar {
-    width: 6px;
+.bot-message .thinking-dots {
+    display: flex; 
+    gap: 4px;
+    padding-block: 15px;
 }
 
-.chat-body::-webkit-scrollbar-track {
-    background: #f1f1f1;
+.bot-message .thinking-dots .dot {
+    height: 7px;
+    width: 7px;
+    opacity: 0.7;
+    border-radius: 50%;
+    background: #a52a2a;
+    animation: dotPulse 1.8s ease-in-out infinite;
 }
 
-.chat-body::-webkit-scrollbar-thumb {
-    background: #c1c1c1;
-    border-radius: 3px;
-}
+@keyframes dotPulse { 
+    0%, 44%{
+        transform: translateY(0);
+    }
 
-.chat-body::-webkit-scrollbar-thumb:hover {
-    background: #a8a8a8;
+    28%{
+        opacity: 0.4;
+        transform: translateY(-4px);
+    }
+    44%{
+        opacity: 0.2;
+    }
+    
 }
