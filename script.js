@@ -7,9 +7,9 @@ const userData = {
 }
 
 
-const createMessageElement = (content, classes) => {
+const createMessageElement = (content, ...classes) => {
     const div = document.createElement("div");
-    div.classList.add("message", classes); 
+    div.classList.add("message", ...classes); 
     div.innerHTML = content; 
     return div;
 }
@@ -35,7 +35,7 @@ const handleOutgoingMessage = (e) => {
                         <div class="dot"></div>
                         <div class="dot"></div>`;
 
-    const incomingMessageDiv = createMessageElement( messageContent,"bot-message");
+    const incomingMessageDiv = createMessageElement( messageContent,"bot-message", "thinking");
     chatBody.appendChild(incomingMessageDiv);
     }, 600);
 }
