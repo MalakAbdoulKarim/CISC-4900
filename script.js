@@ -6,6 +6,8 @@ const userData = {
     message : null
 }
 
+const API_KEY = ``;
+// or url here API_URL
 
 const createMessageElement = (content, ...classes) => {
     const div = document.createElement("div");
@@ -49,4 +51,6 @@ messageInput.addEventListener("keydown", (e) => {
 }); 
 
 sendMessageButton.addEventListener("click", (e) => handleOutgoingMessage(e))
+
+
 
