@@ -41,20 +41,28 @@ elif choice == "2":
 elif choice == "3":
     print("Troubleshooting Email login:")
     print("- Make sure the user is entering the correct CUNY Login format(firstname.lastname##@login.cuny.edu)")
+    print("- Typing your email like (@brooklyn.cuny.edu) instead of (@login.cuny.edu)")
     print("- Reset password via CUNY Login page")
     print("- Wait 30 minutes OR contact campus IT for account unlock")
 
 
 elif choice == "4":
-    print("Troubleshooting Wi-Fi access issues:")
-    print("- Correct eduroam Login(firstname.lastname##@login.cuny.edu)")
+    print("Troubleshooting Student Wi-Fi access issues:")
+    print("- Correct network Login(firstname.lastname##@login.cuny.edu)")
     print("- Forget & Re-Add Network")
     print("- Wait 30 minutes OR contact campus IT for account unlock")
 
 
+elif choice == "5":
+    print("Troubleshooting Faculty/Student Wi-Fi access issues:")
+    print("- Correct network Login(Firstname.Lastname@brooklyn.cuny.edu)")
+    print("- Use CUNY login instead of BC email")
+    print("- Use your @brooklyn.cuny.edu email and Outlook password")
+    print("- Forget & Re-Add Network")
+    print("- Wait 30 minutes OR contact campus IT for account unlock")
 
 # Fallback block.
-# Executes if the input 'choice' does not match any of the defined options ("1", "2", or "3").
+# Executes if the input 'choice' does not match any of the defined options ("1", "2","3","4",or"5").
 # Output: Prints a generic message indicating the option is not recognized.
 else:
     print("Sorry, I don’t recognize that option yet.")
