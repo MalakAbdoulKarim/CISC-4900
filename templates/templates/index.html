@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB COMPUTER LAB CHATBOT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
+    <link rel="stylesheet" href="draft.css">
+</head>
+<body>
+    <div class="chatbot-popup">
+        <!-- Header -->
+        <div class="chat-header">
+            <div class="header-info">
+                <div class="logo-text">Chat Assistant</div>
+            </div>
+            <button id="close-chatbot" class="material-symbols-rounded">keyboard_arrow_down</button>
+        </div>
+        
+        <!-- Body -->
+        <div class="chat-body">
+            <div class="message bot-message">
+                <div class="message-text">Hey there! How can I help you today?</div>
+            </div>
+            <div class="message user-message">
+                <div class="message-text">Lorem ipsum dolor sit am consec tetur adipisicing</div>
+            </div>
+            <div class="message bot-message thinking">
+                <div class="message-text">
+                    <div class ="thinking-dots">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <!-- Footer -->
+        <div class="chat-footer">
+            <form action="#" class="chat-form">
+                <textarea placeholder="Type a Message..." class="message-input" required></textarea>
+                <div class="chat-controls">
+                    <button type="button" class="material-symbols-rounded">sentiment_satisfied</button>
+                    <div class="file-upload-wrapper">
+                    <input type = "file" accept = "images/*" id="file-input" hidden>
+                    <button type="button" id="file-upload" class="material-symbols-rounded">attach_file</button>
+                    </div>
+                    <button type="submit" id="send-message" class="material-symbols-rounded">arrow_upward</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
