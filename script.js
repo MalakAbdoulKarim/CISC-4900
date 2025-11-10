@@ -1,13 +1,15 @@
 const chatBody = document.querySelector(".chat-body"); 
 const messageInput = document.querySelector(".message-input"); 
 const sendMessageButton = document.querySelector("#send-message"); 
+const uploadFileButton = document.querySelector("#file-upload");
 
 const userData = {
     message : null
 }
 
-const API_KEY = ``;
 // or url here API_URL
+const API_KEY = ``;
+
 
 const createMessageElement = (content, ...classes) => {
     const div = document.createElement("div");
@@ -51,6 +53,5 @@ messageInput.addEventListener("keydown", (e) => {
 }); 
 
 sendMessageButton.addEventListener("click", (e) => handleOutgoingMessage(e))
-
-
+document.querySelector("#file-upload").addEventListener("click", () => fileInput.click);
 
