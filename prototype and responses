@@ -1,0 +1,108 @@
+# smart_lab_assistant_prototype.py
+
+def get_response(user_input):
+    user_input = user_input.lower()
+
+    if "mfa" in user_input:
+        return (
+            "Troubleshooting MFA:\n"
+            "- Ensure your primary CUNY Login credentials are correct\n"
+            "- Check if your registered device or authenticator app is accessible\n"
+            "- Make sure the MFA code has not expired\n"
+            "- If issues continue, reset your MFA or contact IT Support"
+        )
+
+    elif "cunyfirst" in user_input:
+        return (
+            "Troubleshooting CUNYFirst Login:\n"
+            "- Use the correct login format: firstname.lastname##@login.cuny.edu\n"
+            "- Make sure CAPS LOCK is not on\n"
+            "- Try resetting your CUNY Login password\n"
+            "- If the account is locked, wait 30 minutes or visit IT Support"
+        )
+
+    elif "forgot password" in user_input or "reset password" in user_input:
+        return (
+            "Password Reset Instructions:\n"
+            "- Go to the CUNY Login page\n"
+            "- Click 'Forgot Password'\n"
+            "- Enter your CUNYfirst EMPLID or CUNY Login\n"
+            "- Check your Outlook email for the verification code"
+        )
+
+    elif "email" in user_input or "outlook" in user_input:
+        return (
+            "Troubleshooting Email (BC Email / Outlook):\n"
+            "- Use your @login.cuny.edu account for CUNY systems\n"
+            "- Use @brooklyn.cuny.edu only for Outlook\n"
+            "- Reset password through the CUNY Login page\n"
+            "- Wait 30 minutes OR contact IT if your account is locked"
+        )
+
+    elif "wifi" in user_input or "wi-fi" in user_input:
+        return (
+            "Troubleshooting Wi-Fi Access:\n"
+            "- Students: Use firstname.lastname##@login.cuny.edu\n"
+            "- Faculty/Staff: Use Firstname.Lastname@brooklyn.cuny.edu\n"
+            "- Forget and re-add the network\n"
+            "- Restart your device\n"
+            "- If still not working, wait 30 minutes or visit IT"
+        )
+
+    elif "help" in user_input or "support" in user_input:
+        return (
+            "I can assist with:\n"
+            "- MFA authentication issues\n"
+            "- CUNYFirst login problems\n"
+            "- Email & Outlook access\n"
+            "- Wi-Fi connection troubleshooting\n"
+            "What issue are you facing?"
+        )
+
+    else:
+        return (
+            "Sorry, I didn’t understand that.\n"
+            "Try asking about:\n"
+            "- MFA\n"
+            "- CUNYFirst\n"
+            "- Email / Outlook\n"
+            "- Wi-Fi"
+        )
+
+
+# -------------------------------
+# Main Program (Menu System)
+# -------------------------------
+
+print("Welcome to Smart Lab Assistant")
+print("What issue are you facing?")
+print("1. Login Issue")
+print("2. MFA questions")
+print("3. Email (BC Email / Outlook) login & password reset")
+print("4. Student Wi-Fi access issues")
+print("5. Faculty Wi-Fi access issues")
+
+choice = input("Enter number: ")
+
+# --- Matching menu choices to response blocks ---
+if choice == "1":
+    print("Troubleshooting Login:")
+    print("- Check if CAPS LOCK is on")
+    print("- Use the correct login format (firstname.lastname##@login.cuny.edu)")
+    print("- Try resetting your CUNY Login password")
+    print("- Ensure you are connected to the campus network")
+
+elif choice == "2":
+    print(get_response("mfa"))
+
+elif choice == "3":
+    print(get_response("email"))
+
+elif choice == "4":
+    print(get_response("wifi student"))
+
+elif choice == "5":
+    print(get_response("wifi faculty"))
+
+else:
+    print("Sorry, I don’t recognize that option yet.")
