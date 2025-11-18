@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB COMPUTER LAB CHATBOT</title>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet">
-    <link rel="stylesheet" href="draft.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles.css') }}">
 </head>
 <body>
     <div class="chatbot-popup">
@@ -20,8 +20,16 @@
         <!-- Body -->
         <div class="chat-body">
             <div class="message bot-message">
-                <div class="message-text">Hey there! How can I help you today?</div>
-            </div>
+                <div class="message-text"> 
+        Welcome to Smart Lab Assistant!<br><br>
+        What issue are you facing?<br>
+        1. Login Issue<br>
+        2. MFA questions<br>
+        3. Email (BC Email / Outlook) login & password reset<br>
+        4. Wi-Fi access issues<br>
+        5. Faculty/Student Wi-Fi access issues
+    </div>
+       </div>
             <div class="message user-message">
                 <div class="message-text">Lorem ipsum dolor sit am consec tetur adipisicing</div>
             </div>
@@ -50,6 +58,7 @@
             </form>
         </div>
     </div>
-    <script src = "script.js"></script>
+    <script src = "{{url_for('static', filename='script.js') }}" ></script>
 </body>
 </html>
+
